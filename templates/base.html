@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}My App{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- Navigation bar included in the base template -->
+    <nav>
+        <a href="/">Home</a> | <a href="/users">Users</a>
+    </nav>
+
+    <!-- Dynamic content will be inserted here -->
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
